@@ -35,7 +35,7 @@
 }
 /* Global */
 body {
-  min-width: 1440px;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -56,7 +56,7 @@ img {
 }
 
 
-header {
+.main-header {
   background-color: var(--basic-gray-white);
 }
   /* Main navigation */
@@ -82,14 +82,26 @@ header {
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.user-navigation a:hover {
   color: var(--special-red);
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: var(--basic-black);
 }
 
 /* Features */
 
+.features {
+  background-color: var(--basic-gray-white);
+}
 
 .features-list {
   list-style: none;
@@ -109,10 +121,6 @@ header {
 .feature-item p {
   font-size: 16px;
   line-height: 24px;
-}
-
-.index-columns {
-  background-color: var(--basic-gray-white);
 }
 
 /* Services */
@@ -152,57 +160,61 @@ header {
   list-style: none;
 }
 
-.second {
+.green {
   background-color: var(--special-green);
 }
 
-.second {
-  background-color: var(--special-green);
-}
-
-.third {
+.yellow {
   background-color: var(--special-yellow);
 }
 
-.button:hover,
-.button:focus,
-.button:active {
+.button:hover {
   background-color: var(--special-red-neutral);
 }
 
-.button.disabled,
-.button:disabled {
-  cursor: default;
+.button:focus {
   background-color: var(--special-red-dark);
   opacity: 0.3;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.second:hover,
-.second:focus,
-.second:active {
-  background-color: var(--special-green-neutral);
+.red {
+  background-color: var(--special-red);
 }
 
-.second.disabled,
-.second:disabled {
-  cursor: default;
-  background-color: var(--special-green-dark);
-  opacity: 0.3;
+.red:hover {
+  background-color: var(--special-red-neutral);
+}
+
+.red:focus {
+  background-color: var(--special-red-dark);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.third:hover,
-.third:focus,
-.third:active {
+.green {
+  background-color: var(--special-green);
+}
+
+.green:hover {
+  background-color: var(--special-green-neutral);
+}
+
+.green:focus {
+  background-color: var(--special-green-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+
+.yellow {
+  background-color: var(--special-yellow);
+}
+
+.yellow:hover {
   background-color: var(--special-yellow-neutral);
 }
 
-.third.disabled,
-.third:disabled {
-  cursor: default;
+.yellow:focus {
   background-color: var(--special-yellow-dark);
-  opacity: 0.3;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
@@ -242,8 +254,6 @@ header {
   text-transform: uppercase;
 }
 
-
-
 /* Details */
 
 .details-list,
@@ -264,16 +274,13 @@ header {
 }
 */
 
-.customers a:hover,
-.customers a:focus,
-.customers a:active {
+.customers a:hover {
   color: var(--basic-black);
 }
 
-.customers a:disabled {
+.customers a:focus {
   opacity: 0.1;
 }
-
 
 /* Percent */
 
@@ -285,7 +292,7 @@ header {
   text-transform: uppercase;
 }
 
-/* Contacts */
+/* Footer-contacts */
 
 .contacts-address {
   color: var(--basic-gray-dim);
@@ -306,52 +313,28 @@ header {
 }
 
 .footer-social h2 {
-font-size: 36px;
-line-height: 36px;
-color: var(--basic-black);
-font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+  font-weight: bold;
 }
 .footer-social {
   text-align: center;
 }
 
-
 /* Social button */
 
 .social-button {
   color: var(--basic-white);
-  background-color: var(--basic-silver-dark);
+  background-color: var(--basic-gray-light-white);
 }
 
-.social-button:hover,
-.social-button:focus,
-.social-button:active {
+.social-button:hover {
   background-color: var(--special-red-neutral);
 }
 
-.social-button:disabled {
+.social-button:focus {
   background-color: var(--special-red-dark);
-}
-
-
-
-/* Footer-contacts */
-
-.footer-contacts a {
-  color: var(--basic-white);
-  text-decoration: underline;
-}
-
-.footer-contacts:hover,
-.footer-contacts:focus,
-.footer-contacts:active {
-  background-color: var(--special-red-neutral);
-}
-
-.footer-contacts:disabled {
-  cursor: default;
-  background-color: var(--special-red-dark);
-  opacity: 0.3;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
@@ -385,6 +368,11 @@ font-weight: bold;
   border: 2px solid var(--basic-black);
 }
 
+.appointment-item input:invalid,
+.appointment-item textarea:invalid {
+  color: var(--special-green-neutral);
+  border: 2px solid var(--special-red-neutral);
+}
 
 
 
