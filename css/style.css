@@ -1,0 +1,390 @@
+:root {
+
+  --basic-black: #000000;
+  --basic-black-dark:#444444;
+
+  --basic-gray-blue: #283136;
+  --basic-gray-dark: #4d4d4d;
+  --basic-gray-dim:#666666;
+  --basic-gray-neutral: #ababab;
+  --basic-gray-neutral-light: #b4b9bb;
+  --basic-gray-neutral-white: #d7dcde;
+  --basic-gray-light:#d5d5d5;
+  --basic-gray-light-white: #e1e1e1;
+  --basic-gray-white: #eeeeee;
+  --basic-gray-white-light: #dfdfdf;
+
+
+  --basic-silver: #c1c1c1;
+  --basic-silver-dark: #c4c4c4;
+
+  --basic-white: #ffffff;
+  --basic-white-gray: #f2f2f2;
+
+  --special-red: #fb565a;
+  --special-red-neutral: #E74246;
+  --special-red-dark: #D7373B;
+
+  --special-green: #00ca74;
+  --special-green-neutral: #00bc6c;
+  --special-green-dark: #00aa62;
+
+  --special-yellow: #efc849;
+  --special-yellow-neutral: #eab534;
+  --special-yellow-dark: #e5a722;
+}
+/* Global */
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-gray-blue);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+header {
+  background-color: var(--basic-gray-white);
+}
+  /* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+/* User navigation */
+
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: var(--special-red);
+}
+
+/* Features */
+
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.feature-item p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.index-columns {
+  background-color: var(--basic-gray-white);
+}
+
+/* Services */
+
+.services-list {
+  list-style: none;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+/* Button */
+
+.button {
+  font-weight: 500;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--special-red);
+  border: none;
+  border-radius: 3px;
+}
+
+.feature-item .button {
+  width: 240px;
+  height: 50px;
+}
+
+.button-slide {
+  list-style: none;
+}
+
+.second {
+  background-color: var(--special-green);
+}
+
+.second {
+  background-color: var(--special-green);
+}
+
+.third {
+  background-color: var(--special-yellow);
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--special-red-neutral);
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  background-color: var(--special-red-dark);
+  opacity: 0.3;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.second:hover,
+.second:focus,
+.second:active {
+  background-color: var(--special-green-neutral);
+}
+
+.second.disabled,
+.second:disabled {
+  cursor: default;
+  background-color: var(--special-green-dark);
+  opacity: 0.3;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.third:hover,
+.third:focus,
+.third:active {
+  background-color: var(--special-yellow-neutral);
+}
+
+.third.disabled,
+.third:disabled {
+  cursor: default;
+  background-color: var(--special-yellow-dark);
+  opacity: 0.3;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+
+/* Appointment */
+
+.appointment-item input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid var(--basic-black);
+}
+
+.appointment-item input:focus {
+  border-color: var(--special);
+}
+
+/* Company */
+
+.company {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.company h2 {
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black);
+  font-weight: 500;
+}
+
+.company h3 {
+  text-transform: uppercase;
+}
+
+
+
+/* Details */
+
+.details-list,
+.customers-list {
+  list-style: none;
+}
+
+.details h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+/* Customers */
+/*
+.customers a {
+  opacity: 0.2;
+}
+*/
+
+.customers a:hover,
+.customers a:focus,
+.customers a:active {
+  color: var(--basic-black);
+}
+
+.customers a:disabled {
+  opacity: 0.1;
+}
+
+
+/* Percent */
+
+.percent {
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Contacts */
+
+.contacts-address {
+  color: var(--basic-gray-dim);
+}
+
+.contacts-address h3 {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Footer-social */
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+font-size: 36px;
+line-height: 36px;
+color: var(--basic-black);
+font-weight: bold;
+}
+.footer-social {
+  text-align: center;
+}
+
+
+/* Social button */
+
+.social-button {
+  color: var(--basic-white);
+  background-color: var(--basic-silver-dark);
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+  background-color: var(--special-red-neutral);
+}
+
+.social-button:disabled {
+  background-color: var(--special-red-dark);
+}
+
+
+
+/* Footer-contacts */
+
+.footer-contacts a {
+  color: var(--basic-white);
+  text-decoration: underline;
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus,
+.footer-contacts:active {
+  background-color: var(--special-red-neutral);
+}
+
+.footer-contacts:disabled {
+  cursor: default;
+  background-color: var(--special-red-dark);
+  opacity: 0.3;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* Appointment */
+
+.appointment h2 {
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--basic-black);
+  font-weight: bold;
+}
+
+.appointment-item label {
+  color: var(--basic-black);
+  font-weight: bold;
+}
+
+.appointment-item input,
+.appointment-item textarea {
+  color: var(--basic-black-dark);
+  border: 2px solid var(--basic-gray-neutral-white);
+}
+
+.appointment-item input:hover,
+.appointment-item textarea:hover {
+  border: 2px solid var(--basic-gray-neutral-light);
+}
+
+.appointment-item input:focus,
+.appointment-item textarea:focus {
+  border: 2px solid var(--basic-black);
+}
+
+
+
+
