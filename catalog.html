@@ -48,16 +48,16 @@
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
-              <li class="filter-option filter-radio">
-                <input class="filter-input-radio filter-input" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
+              <li class="filter-option">
+                <input class="filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
-              <li class="filter-option filter-radio">
-                <input class="filter-input-radio filter-input" type="radio" name="product-group" value="fix" id="filter-fix">
+              <li class="filter-option">
+                <input class="filter-input-radio" type="radio" name="product-group" value="fix" id="filter-fix">
                 <label for="filter-fix">Фиксированная</label>
               </li>
-              <li class="filter-option filter-radio">
-                <input class="filter-input-radio filter-input" type="radio" name="product-group" value="rubber" id="filter-rubber">
+              <li class="filter-option">
+                <input class="filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber">
                 <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
@@ -66,23 +66,23 @@
             <legend>Особенности:</legend>
             <ul>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="advantages-block" id="filter-advantages-block">
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="advantages-block" id="filter-advantages-block">
                 <label for="filter-advantages-block">Блок преимуществ</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="basket" id="filter-basket">
                 <label for="filter-basket">Корзина</label>
               </li>
             </ul>
@@ -93,110 +93,98 @@
       <section class="sorting">
         <h3 class="sorting-title">Сортировать</h3>
         <ul class="sorting-list">
-          <li class="sorting-item price"><a href="#">по цене</a></li>
-          <li class="sorting-item like"><a href="#">по типу</a></li>
-          <li class="sorting-item named"><a href="#">по названию</a></li>
+          <li class="sorting-item"><a class="active" href="#">по цене</a></li>
+          <li class="sorting-item"><a href="#">по типу</a></li>
+          <li class="sorting-item"><a href="#">по названию</a></li>
         </ul>
         <ul class="rating-list">
-          <li class="rating-item down">
-            <a href="#">по убыванию</a>
+          <li class="rating-item">
+            <a class="active" href="#">по убыванию</a>
           </li>
-          <li class="rating-item up">
+          <li class="rating-item">
             <a href="#">по возрастанию</a>
           </li>
         </ul>
       </section>
-      <section class="catalog">
+      <section class="catalog-card">
         <!--h2>Список готовых шаблонов</h2><Заголовок будет скрыт-->
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <section class="catalog-category">
-              <p class="catalog-item-image">
-                <img src="img/jpg/pattern_1.jpg" width="358" height="578" alt="Иллюстрация-Sedona">
-              </p>
-              <div class="catalog-item-link">
+        <ul class="catalog-card-list">
+          <li class="catalog-card-item">
+            <section class="catalog-card-category">
+              <img src="img/jpg/pattern_1.jpg" width="358" height="578" alt="Иллюстрация-Sedona">
+              <div class="catalog-item-wrapper">
                 <a href="#">
-                  <h3 class="catalog-item-title">Sedona</h3>
+                  <h3 class="catalog-card-title">Sedona</h3>
                 </a>
                 <p>Информационный сайт для туристов</p>
-                <button class="catalog-item-price" type="button">9 900 ₽</button>
+                <button class="catalog-card-price" type="button">9 900 ₽</button>
               </div>
             </section>
           </li>
-          <li class="catalog-item">
-            <section class="catalog-category">
-              <p class="catalog-item-image">
-                <img src="img/jpg/pattern_2.jpg" width="358" height="578" alt="Иллюстрация-Pink">
-              </p>
-              <div class="catalog-item-link">
+          <li class="catalog-card-item">
+            <section class="catalog-card-category">
+              <img class="catalog-card-image" src="img/jpg/pattern_2.jpg" width="358" height="578" alt="Иллюстрация-Pink">
+              <div class="catalog-item-wrapper">
                 <a href="#">
-                  <h3 class="catalog-item-title">Pink App</h3>
+                  <h3 class="catalog-card-title">Pink App</h3>
                 </a>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <button class="catalog-item-price" type="button">9 900 ₽</button>
+                <button class="catalog-card-price" type="button">9 900 ₽</button>
               </div>
             </section>
           </li>
-          <li class="catalog-item">
-            <section class="catalog-category">
-              <p class="catalog-item-image">
-                <img src="img/jpg/pattern_3.jpg" width="358" height="578" alt="Иллюстрация-Barbershop">
-              </p>
-              <div class="catalog-item-link">
+          <li class="catalog-card-item">
+            <section class="catalog-card-category">
+              <img class="catalog-card-image" src="img/jpg/pattern_3.jpg" width="358" height="578" alt="Иллюстрация-Barbershop">
+              <div class="catalog-item-wrapper">
                 <a href="#">
-                  <h3 class="catalog-item-title">Barbershop</h3>
+                  <h3 class="catalog-card-title">Barbershop</h3>
                 </a>
                 <p>Сайт салона красоты. Для мужчин, да.</p>
-                <button class="catalog-item-price" type="button">9 900 ₽</button>
+                <button class="catalog-card-price" type="button">9 900 ₽</button>
               </div>
             </section>
           </li>
-          <li class="catalog-item">
-            <section class="catalog-category">
-              <p class="catalog-item-image">
-                <img src="img/jpg/pattern_4.jpg" width="358" height="578" alt="Иллюстрация-MISHKA">
-              </p>
-              <div class="catalog-item-link">
+          <li class="catalog-card-item">
+            <section class="catalog-card-category">
+              <img class="catalog-card-image" src="img/jpg/pattern_4.jpg" width="358" height="578" alt="Иллюстрация-MISHKA">
+              <div class="catalog-item-wrapper">
                 <a href="#">
-                  <h3 class="catalog-item-title">Mishka</h3>
+                  <h3 class="catalog-card-title">Mishka</h3>
                 </a>
                 <p>Интернет-магазин вязаных игрушек</p>
-                <button class="catalog-item-price" type="button">9 900 ₽</button>
+                <button class="catalog-card-price" type="button">9 900 ₽</button>
               </div>
             </section>
           </li>
-          <li class="catalog-item">
-            <section class="catalog-category">
-              <p class="catalog-item-image">
-                <img src="img/jpg/pattern_5.jpg" width="358" height="578" alt="Иллюстрация-A Plus">
-              </p>
-              <div class="catalog-item-link">
+          <li class="catalog-card-item">
+            <section class="catalog-card-category">
+              <img class="catalog-card-image" src="img/jpg/pattern_5.jpg" width="358" height="578" alt="Иллюстрация-A Plus">
+              <div class="catalog-item-wrapper">
                 <a href="#">
-                  <h3 class="catalog-item-title">A Plus</h3>
+                  <h3 class="catalog-card-title">A Plus</h3>
                 </a>
                 <p>Лендинг курсов повышения квалификации</p>
-                <button class="catalog-item-price" type="button">9 900 ₽</button>
+                <button class="catalog-card-price" type="button">9 900 ₽</button>
               </div>
             </section>
           </li>
-          <li class="catalog-item">
-            <section class="catalog-category">
-              <p class="catalog-item-image">
-                <img src="img/jpg/pattern_6.jpg" width="358" height="578" alt="Иллюстрация-КВАСТ">
-              </p>
-              <div class="catalog-item-link">
+          <li class="catalog-card-item">
+            <section class="catalog-card-category">
+              <img class="catalog-card-image" src="img/jpg/pattern_6.jpg" width="358" height="578" alt="Иллюстрация-КВАСТ">
+              <div class="catalog-item-wrapper">
                 <a href="#">
-                  <h3 class="catalog-item-title">Кваст</h3>
+                  <h3 class="catalog-card-title">Кваст</h3>
                 </a>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <button class="catalog-item-price" type="button">9 900 ₽</button>
+                <button class="catalog-card-price" type="button">9 900 ₽</button>
               </div>
             </section>
           </li>
         </ul>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current">
-            <a>1</a>
+            <a class="active">1</a>
           </li>
           <li class="pagination-item">
             <a  href="#">2</a>
