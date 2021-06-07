@@ -16,23 +16,35 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/icon/logo_nerds.svg" width="160" height="65" alt="Логотип магазина «Nёrds»">
         </a>
-        <div class="main-navigation-wrapper">
-          <div class="container">
-            <ul class="site-navigation">
-              <li><a href="blank.html">Студия</a></li>
-              <li><a href="blank.html">Клиенты</a></li>
-              <li><a>Магазин</a></li>
-              <li><a href="blank.html">Контакты</a></li>
-            </ul>
-            <div class="user-navigation">
-              <a class="basket-link" href="blank.html">Корзина</a>
-            </div>
-          </div>
+        <ul class="site-navigation">
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a>Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+        <div class="user-navigation">
+          <a class="basket-link" href="blank.html">Корзина</a>
         </div>
       </nav>
     </header>
     <main class="page-catalog-container">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
+      <section class="sorting">
+        <h3 class="sorting-title">Сортировать</h3>
+        <ul class="sorting-list">
+          <li class="sorting-item"><a class="active" href="#">по цене</a></li>
+          <li class="sorting-item"><a href="#">по типу</a></li>
+          <li class="sorting-item"><a href="#">по названию</a></li>
+        </ul>
+        <ul class="rating-list">
+          <li class="rating-item">
+            <a class="active" href="#">по убыванию</a>
+          </li>
+          <li class="rating-item">
+            <a href="#">по возрастанию</a>
+          </li>
+        </ul>
+      </section>
       <section class="filters">
         <!--h2>Фильтр по параметрам</h2><Заголовок будет скрыт-->
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -89,22 +101,6 @@
           </fieldset>
           <button type="submit">Показать</button>
         </form>
-      </section>
-      <section class="sorting">
-        <h3 class="sorting-title">Сортировать</h3>
-        <ul class="sorting-list">
-          <li class="sorting-item"><a class="active" href="#">по цене</a></li>
-          <li class="sorting-item"><a href="#">по типу</a></li>
-          <li class="sorting-item"><a href="#">по названию</a></li>
-        </ul>
-        <ul class="rating-list">
-          <li class="rating-item">
-            <a class="active" href="#">по убыванию</a>
-          </li>
-          <li class="rating-item">
-            <a href="#">по возрастанию</a>
-          </li>
-        </ul>
       </section>
       <section class="catalog">
         <!--h2>Список готовых шаблонов</h2><Заголовок будет скрыт-->
@@ -213,7 +209,7 @@
         </div>
       </section>
       <section class="footer-social">
-        <ul>
+        <ul class="footer-social-list">
           <li>
             <a class="social-button" href="#">Вконтакте</a>
           </li>
@@ -224,8 +220,10 @@
             <a class="social-button" href="#">Инстаграм</a>
           </li>
         </ul>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="footer-social-heading">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
     </footer>
     <section class="appointment">
