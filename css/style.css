@@ -47,6 +47,7 @@ body {
 }
 
 .page-body {
+  width: 1160px;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -70,6 +71,7 @@ img {
 
 
 .main-header {
+  width: 1440px;
   background-color: var(--basic-gray-white);
   padding-top: 60px;
 }
@@ -86,14 +88,14 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
   width: 1160px;
-  padding-left: 140px;
-  padding-right: 140px;
   padding-bottom: 20px;
 }
 
 .main-header-logo {
+  display: block;
   width: 160px;
   height: 65px;
+
 }
 
 .site-navigation {
@@ -168,6 +170,11 @@ img {
   line-height: 24px;
 }
 
+.feature-item .button {
+  width: 240px;
+  height: 50px;
+}
+
 .feature-item-active {
   display: block;
 }
@@ -176,33 +183,21 @@ img {
 
 .services {
   padding-bottom: 60px;
-  width: 1100px;
-  height: 347px;
+  width: 1160px;
   margin-bottom: 80px;
 }
-/*
-.services-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1160px;
-  margin: 0 0;
-  padding-left: 140px;
-  padding-right: 140px;
-  padding-top: 80px;
-}*/
 
 .services-list  {
   list-style: none;
-  display: flex;
-  /*flex-direction: column;*/
-  width: 1100px;
-  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  justify-content: center;
+  /*display: flex;
+  width: 1160px;
   padding: 0;
-  justify-content: space-between;
-  padding-left: 140px;
-  padding-right: 140px;
-  padding-top: 80px;
+  justify-content: space-around;
+  padding-top: 80px;*/
 }
 
 .service-item {
@@ -217,19 +212,18 @@ img {
   text-transform: uppercase;
 }
 
-.service-item a {
-
-  padding-left: 80px;
-  padding-bottom: 25px;
-}
-
 .service-item p {
   padding-bottom: 20px;
+}
+
+.service-item .button {
+  width: 160px;
+  height: 50px;
 }
 /* Button */
 
 .button {
-  display: inline-block;
+  display: block;
   font-weight: 500;
   text-align: center;
   color: var(--basic-white);
@@ -327,10 +321,8 @@ img {
 .company-details-columns{
   display: grid;
   grid-template-columns: 1fr 360px;
-  width: 1174px;
-  height: 413px;
+  width: 1160px;
   margin: 0 auto;
-  width: 1174px;
   padding-top: 60px;
   padding-bottom: 80px;
 }
@@ -421,23 +413,14 @@ img {
 }
 
 /* Customers-list */
-/*
-.customers-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 1160px;
-  margin: 0 auto;
-}*/
 
 .customers-list {
   display: flex;
   width: 1160px;
-  height: 184;
   justify-content: space-between;
   align-items: center;
   margin: 0px;
   padding: 0px;
-  padding-left: 140px;
 }
 
 /* Percent */
@@ -461,21 +444,14 @@ img {
 /* Footer-contacts */
 
 .footer-contacts {
-  padding-left: 140px;
   margin-top: 55px;
-}
-
-.footer-contacts h3{
-  margin: 0px;
-  padding: 0px;
+  width: 1440px;
 }
 
 .contacts-address {
   width: 319px;
   height: 308px;
   color: var(--basic-gray-dim);
-  padding-top: 50px;
-  padding-left: 50px;
 }
 
 .contacts-address h3 {
@@ -488,11 +464,8 @@ img {
 }
 
 .contacts-address .button {
-  padding: 0px;
-  margin: 0px;
-  margin-top: 20px;
-  padding-bottom: 30px;
-  padding-left: 90px;
+  width: 219px;
+  height: 50px;
 }
 /* Footer-social */
 
@@ -511,7 +484,7 @@ img {
 .footer-social {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 1440px;
+  width: 1160px;
   margin: 0 auto;
   /*padding-left: 0px;*/
 }
@@ -523,7 +496,6 @@ img {
   grid-template-columns: min-content min-content min-content;
   align-content: center;
   margin: 0px;
-  margin-left: 140px;
   column-gap: 5px;
 }
 
@@ -545,9 +517,6 @@ img {
 }
 
 /* Appointment */
-.appointment {
-  padding-left: 140px;
-}
 
 .appointment h2 {
   font-size: 45px;
@@ -559,6 +528,7 @@ img {
 .appointment-item label {
   color: var(--basic-black);
   font-weight: bold;
+
 }
 
 .appointment-item input,
