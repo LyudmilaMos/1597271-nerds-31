@@ -47,7 +47,7 @@ body {
 }
 
 .page-body {
-  width: 1160px;
+  min-width: 1160px;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -71,7 +71,8 @@ img {
 
 
 .main-header {
-  width: 1440px;
+  width: 100%;
+  min-height: 100%;
   background-color: var(--basic-gray-white);
   padding-top: 60px;
 }
@@ -89,6 +90,7 @@ img {
   color: var(--basic-black);
   width: 1160px;
   padding-bottom: 20px;
+  margin: 0 auto;
 }
 
 .main-header-logo {
@@ -143,9 +145,7 @@ img {
 }
 
 .features-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1160px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -445,7 +445,13 @@ img {
 
 .footer-contacts {
   margin-top: 55px;
-  width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.map {
+  height: 416px;
+  background-image:url("../img/jpg/map.jpg");
 }
 
 .contacts-address {
