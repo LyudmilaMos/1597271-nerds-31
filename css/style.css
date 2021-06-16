@@ -145,7 +145,7 @@ img {
 }
 
 .features-inner {
-  width: 100%;
+  width: 1160px;
   margin: 0 auto;
 }
 
@@ -185,6 +185,7 @@ img {
   padding-bottom: 60px;
   width: 1160px;
   margin-bottom: 80px;
+  margin: 0 auto;
 }
 
 .services-list  {
@@ -299,6 +300,7 @@ img {
 
 
 /* Contacts */
+
 
 .contacts-phone {
   color: inherit;
@@ -419,7 +421,7 @@ img {
   width: 1160px;
   justify-content: space-between;
   align-items: center;
-  margin: 0px;
+  margin: 0 auto;
   padding: 0px;
 }
 
