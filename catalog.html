@@ -29,24 +29,8 @@
     </header>
     <main class="page-catalog-container">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
-      <section class="sorting">
-        <h3 class="sorting-title">Сортировать</h3>
-        <ul class="sorting-list">
-          <li class="sorting-item"><a class="active" href="#">по цене</a></li>
-          <li class="sorting-item"><a href="#">по типу</a></li>
-          <li class="sorting-item"><a href="#">по названию</a></li>
-        </ul>
-        <ul class="rating-list">
-          <li class="rating-item">
-            <a class="active" href="#">по убыванию</a>
-          </li>
-          <li class="rating-item">
-            <a href="#">по возрастанию</a>
-          </li>
-        </ul>
-      </section>
       <section class="filters">
-        <!--h2>Фильтр по параметрам</h2><Заголовок будет скрыт-->
+        <!--h3>Стоимость:</h3-->
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset><!--Форма в работе-->
             <legend>Стоимость:</legend>
@@ -104,6 +88,22 @@
       </section>
       <section class="catalog">
         <!--h2>Список готовых шаблонов</h2><Заголовок будет скрыт-->
+        <section class="sorting">
+          <h3 class="sorting-title">Сортировать:</h3>
+          <ul class="sorting-list">
+            <li class="sorting-item"><a class="active" href="#">по цене</a></li>
+            <li class="sorting-item"><a href="#">по типу</a></li>
+            <li class="sorting-item"><a href="#">по названию</a></li>
+          </ul>
+          <ul class="rating-list">
+            <li class="rating-item">
+              <a class="active" href="#">по убыванию</a>
+            </li>
+            <li class="rating-item">
+              <a href="#">по возрастанию</a>
+            </li>
+          </ul>
+        </section>
         <ul class="catalog-card-list">
           <li class="catalog-card-item">
             <section class="catalog-card">
@@ -197,7 +197,7 @@
     <footer class="main-footer">
       <section class="footer-contacts">
         <!--h2>Контактная информация</h2><Заголовок будет скрыт-->
-        <div>
+        <div class="contacts map">
           <section class="contacts-address">
             <h3>NЁRDS DESIGN STUDIO</h3>
             <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
