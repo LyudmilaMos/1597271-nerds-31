@@ -584,8 +584,7 @@ img {
 
 .filter {
   min-width: 260px;
-  margin: 0 auto;
-  margin-top: 55px;
+  margin: 55px 0 auto;
 }
 
 .filter ul {
@@ -652,10 +651,9 @@ background: var(--basic-gray-white-light);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 55px 0 auto;
   height: 50px;
   width: 900px;
-  margin-top: 55px;
 }
 
 .sorting-title {
