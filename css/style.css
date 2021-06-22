@@ -141,7 +141,7 @@ img {
   height: 15px;
   top: 8px;
   left: 20px;
-  background-image: url("../img/icon/basket.svg");
+  background-image: url("../img/header/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -187,15 +187,36 @@ img {
 
 .features-inner {
   width: 1160px;
-  height: 420px;
-  margin: 0;
+  /*height: 420px;*/
   padding: 0;
   list-style: none;
   margin: 0 auto;
 }
 
+.feature-item{
+  /*width: 760px;*/
+  /*height: 431px;*/
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position-x: 396px;
+  background-position-y: -13px;
+}
+
+.feature-item-design {
+  background-image: url(../img/features/slide_1.png);
+}
+
+.feature-item-math {
+  background-image: url(../img/features/slide_2.png);
+}
+
+.feature-item-night {
+  background-image: url(../img/features/slide_3.png);
+}
 
 .feature-item h3 {
+
+  width: 538px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -204,9 +225,11 @@ img {
   margin-top: 0px;
   align-self: center;
   padding-top: 65px;
+  letter-spacing:normal;
 }
 
 .feature-item p {
+  width: 400px;
   font-size: 16px;
   line-height: 24px;
   margin-top: 0px;
@@ -218,79 +241,42 @@ img {
   height: 50px;
 }
 
-.slide-active {
+.feature-active {
   display: block;
 }
 
-.slide {
+.feature-passive {
   display: none;
 }
-
-
 .slider-buttons {
   display: flex;
   width: 88px;
   justify-content: space-between;
-  position: absolute;
+  position: relative;
   bottom: 98px;
   left: 676px;
   z-index: 20;
 }
-
 .slider-buttons button {
   padding: 0;
   width: 18px;
   height: 18px;
-  background: var(--basic-white);
+  background-color: var(--basic-white);
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
+
 /*
-.slider-buttons .button-active {
-  position: ;
+.button-active {
+  position: relative;
   background: var(--basic-white);
   width: 8px;
   height: 8px;
-  border: 2px solid #be0b0b;
+  border: 2px solid #181616;
   box-sizing: border-box;
-
-}*/
-.slide-1 {
-  background-image: url(../img/png/slide_1.png);
-  /*width: 760px;*/
-  height: 431px;
-  z-index: 0;
-  background-repeat: no-repeat;
-  background-position-x: 396px;
-  background-position-y: -13px;
-  margin: 0px;
-  padding: 0px;
 }
-
-.slide-2 {
-  background-image: url(../img/png/slide_2.png);
-  /*width: 760px;*/
-  height: 431px;
-  background-repeat: no-repeat;
-  background-repeat: no-repeat;
-  background-position-x: 396px;
-  background-position-y: -13px;
-  margin: 0px;
-  padding: 0px;
-}
-
-.slide-3 {
-  background-image: url(../img/png/slide_3.png);
-  /*width: 760px;*/
-  height: 431px;
-  background-repeat: no-repeat;
-  background-repeat: no-repeat;
-  background-position-x: 396px;
-  background-position-y: -15px;
-  margin: 0px;
-  padding: 0px;
-}
+*/
 /* Services */
 
 .services {
@@ -354,10 +340,10 @@ img {
   justify-content: center;
 }
 
-
+/*
 .slider-buttons {
   list-style: none;
-}
+}*/
 
 .green {
   background-color: var(--special-green);
@@ -425,17 +411,6 @@ img {
   color: inherit;
 }
 
-/* Appointment */
-
-.appointment-item input {
-  font: inherit;
-  background-color: transparent;
-  border: 2px solid var(--basic-black);
-}
-
-.appointment-item input:focus {
-  border-color: var(--special);
-}
 
 /* Company-details-columns */
 
@@ -581,24 +556,26 @@ img {
 /* Footer-contacts */
 
 .footer-contacts {
-  margin-top: 55px;
+
   width: 100%;
   margin: 0 auto;
+
 }
 
 .map {
   height: 416px;
-  background-image:url("../img/jpg/map.jpg");
+  background-image:url("../img/footer/map.jpg");
+  margin-top: 55px;
 }
 
 .contacts-address {
-  width: 319px;
-  height: 308px;
+  width: 219px;
   color: var(--basic-gray-dim);
   background-color: var(--basic-white);
   position: relative;
   left: 140px;
   top: 55px;
+  padding: 50px;
 }
 
 .contacts-address h3 {
@@ -607,20 +584,18 @@ img {
   color: var(--basic-black);
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 50px;
-  padding-left: 50px;
+  margin: 0px;
 }
-.contacts-address p,
-.contacts-address a {
-  padding-left: 50px;
-  padding-top: 5px;
+
+.contacts-address p {
+  margin-top: 23px;
 }
 
 .contacts-address .button {
   width: 168px;
-  height: 47px;
-  margin-left: 50px;
-  margin-top: 35px;
+  height: 50px;
+  margin-top: 38px;
+  padding: 0px 26px;
 }
 
 /* Footer-social */
@@ -689,22 +664,24 @@ img {
 /* Appointment */
 
 .appointment {
-  position: absolute;
-  width: 860px;
-  height: 564px;
-  top: 1706px;
-  left: 240px;
-  padding-left: 100px;
-  padding-top: 17px;
+  position: fixed;
+  width: 760px;
+  padding: 63px 100px 84px;
+  left: 140px;
   background-color: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-
+  display: none;
 }
+/*
+.appointment-active {
+  display: block;
+}*/
 
 .appointment form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: space-between;
+  width: 760px;
 }
 
 .appointment h2 {
@@ -712,54 +689,85 @@ img {
   line-height: 53px;
   color: var(--basic-black);
   font-weight: bold;
+  margin: 0px;
+  margin-bottom: 40px;
+
 }
+
+.appointment h2::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 849px;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/footer/vector.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
 
 .appointment-item {
   width: 360px;
   margin-top: 0;
   margin-bottom: 33px;
-  margin-right: 40px;
+}
+
+.appointment-name {
+  margin-right: 20px;
 }
 
 .appointment-item label {
   color: var(--basic-black);
   font-weight: bold;
   display: block;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .appointment-item input {
   width: 360px;
   height: 50px;
-  padding-top: 8px;
-  padding-right: 15px;
-  padding-bottom: 7px;
-  padding-left: 15px;
   font: inherit;
   background-color: transparent;
   border: 2px solid var(--basic-black);
   box-sizing: border-box;
+  padding: 8px 15px 7px 15px;
 }
 
 .appointment-item textarea {
   width: 760px;
   height: 118px;
-  padding-top: 8px;
-  padding-right: 15px;
-  padding-bottom: 7px;
-  padding-left: 15px;
   font: inherit;
   background-color: transparent;
   border: 2px solid var(--basic-black);
   box-sizing: border-box;
-  margin-bottom: 20px;
-}
+  padding: 8px 15px 7px 15px;
+ }
 
 .appointment .button {
   display: block;
   width: 259px;
   height: 50px;
-  margin-top: 21px;
+  margin-top: 37px;
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+
+.appointment-item input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid var(--basic-black);
+}
+
+.appointment-item input:focus {
+  border-color: var(--special);
 }
 
 .appointment-item input,
