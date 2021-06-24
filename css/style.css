@@ -101,7 +101,7 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 30px;
+  /*line-height: 30px;*/
   text-transform: uppercase;
   color: var(--basic-black);
   width: 1160px;
@@ -124,23 +124,24 @@ img {
   width: 437px;
   list-style: none;
   margin: 0;
-  padding: 20px 23px 0px 0;
+  padding: 20px 0px 0px;
 }
 
 .user-navigation {
-  max-width: 140px;
-  padding: 20px 0px 0px 0;
+  min-width: 165px;
+  padding: 0px;
 }
 
 /* Login link */
 
-.basket-link::before {
+.basket-link {
   content: "";
-  position: absolute;
+  position: relative;
   width: 15px;
   height: 15px;
+
   top: 8px;
-  left: 20px;
+  left: 48px;
   background-image: url("../img/header/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -148,7 +149,7 @@ img {
 
 .user-navigation .basket-link {
   position: relative;
-  padding-left: 60px;
+  padding-left: 40px;
 
 }
 
@@ -214,6 +215,11 @@ img {
   background-image: url(../img/features/slide_3.png);
 }
 
+.feature-item-math,
+.feature-item-night {
+  display: none;
+}
+
 .feature-item h3 {
 
   width: 538px;
@@ -239,21 +245,19 @@ img {
 .feature-item .button {
   width: 240px;
   height: 50px;
+  background-color: var(--special-red);
 }
 
 .feature-active {
   display: block;
 }
 
-.feature-passive {
-  display: none;
-}
 .slider-buttons {
   display: flex;
   width: 88px;
   justify-content: space-between;
-  position: relative;
-  bottom: 98px;
+  position: absolute;
+  bottom: 18px;
   left: 676px;
   z-index: 20;
 }
@@ -267,16 +271,17 @@ img {
   cursor: pointer;
 }
 
-/*
-.button-active {
-  position: relative;
-  background: var(--basic-white);
+.button-active.button::after {
+  content: "";
   width: 8px;
   height: 8px;
-  border: 2px solid #181616;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #C1C1C1;
   box-sizing: border-box;
+  cursor: pointer;
 }
-*/
+
 /* Services */
 
 .services {
@@ -329,10 +334,8 @@ img {
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--special-red);
-  border: none;
   border-radius: 3px;
-
+  border: none;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -352,12 +355,13 @@ img {
 .yellow {
   background-color: var(--special-yellow);
 }
-
-.button:hover {
+.feature-item .button:hover,
+.contacts-address .button:hover {
   background-color: var(--special-red-neutral);
 }
 
-.button:focus {
+.feature-item .button:focus,
+.contacts-address .button:focus {
   background-color: var(--special-red-dark);
   opacity: 0.3;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
@@ -596,6 +600,7 @@ img {
   height: 50px;
   margin-top: 38px;
   padding: 0px 26px;
+  background-color: var(--special-red);
 }
 
 /* Footer-social */
@@ -667,7 +672,8 @@ img {
   position: fixed;
   width: 760px;
   padding: 63px 100px 84px;
-  left: 140px;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   display: none;
@@ -707,7 +713,6 @@ img {
 
 }
 
-
 .appointment-item {
   width: 360px;
   margin-top: 0;
@@ -725,7 +730,8 @@ img {
   margin-bottom: 10px;
 }
 
-.appointment-item input {
+.appointment-item input[type="text"],
+.appointment-item input[type="email"] {
   width: 360px;
   height: 50px;
   font: inherit;
@@ -750,6 +756,7 @@ img {
   width: 259px;
   height: 50px;
   margin-top: 37px;
+  background-color: var(--special-red);
 
 
   display: flex;
