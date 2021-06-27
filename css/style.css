@@ -332,7 +332,7 @@ img {
   font-weight: 500;
   text-align: center;
   color: var(--basic-white);
-  vertical-align: middle;
+  /*vertical-align: middle;*/
   text-transform: uppercase;
   border-radius: 3px;
   border: none;
@@ -665,14 +665,17 @@ img {
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;*/
+  justify-content: space-between;
+}*/
+
 /* Appointment */
 
 .appointment {
   position: fixed;
   width: 760px;
   padding: 63px 100px 84px;
-  left: 50%; top: 50%;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
@@ -710,7 +713,15 @@ img {
   background-image: url("../img/footer/vector.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.3;
+}
 
+.appointment h2:hover::after{
+  opacity: 1;
+}
+
+.appointment h2:hover:active{
+  opacity: 0.1;
 }
 
 .appointment-item {
@@ -731,25 +742,47 @@ img {
 }
 
 .appointment-item input[type="text"],
-.appointment-item input[type="email"] {
+.appointment-item input[type="email"],
+.appointment-item textarea {
   width: 360px;
   height: 50px;
   font: inherit;
+  color: var(--basic-black-dark);
   background-color: transparent;
-  border: 2px solid var(--basic-black);
+  border: 2px solid var(--basic-gray-neutral-white);
   box-sizing: border-box;
+  border-radius: 3px;
   padding: 8px 15px 7px 15px;
 }
+
 
 .appointment-item textarea {
   width: 760px;
   height: 118px;
-  font: inherit;
-  background-color: transparent;
+}
+
+
+.appointment-item input[type="text"]:hover,
+.appointment-item input[type="email"]:hover,
+.appointment-item textarea:hover {
+  border: 2px solid var(--basic-gray-neutral-light);
+  color: var(--basic-black-dark);
+  opacity: 0.5;
+}
+
+.appointment-item input[type="text"]:focus,
+.appointment-item input[type="email"]:focus,
+.appointment-item textarea:focus {
   border: 2px solid var(--basic-black);
-  box-sizing: border-box;
-  padding: 8px 15px 7px 15px;
- }
+  color: var(--basic-black-dark);
+}
+
+.appointment-item input[type="text"]:invalid,
+.appointment-item input[type="email"]:invalid,
+.appointment-item textarea:invalid {
+  border: 2px solid var(--special-red-neutral);
+  color:var(--special-red);
+}
 
 .appointment .button {
   display: block;
@@ -767,36 +800,13 @@ img {
 }
 
 
-.appointment-item input {
-  font: inherit;
-  background-color: transparent;
-  border: 2px solid var(--basic-black);
+.appointment .button:hover {
+  background-color: var(--special-red-neutral);
 }
 
-.appointment-item input:focus {
-  border-color: var(--special);
-}
-
-.appointment-item input,
-.appointment-item textarea {
-  color: var(--basic-black-dark);
-  border: 2px solid var(--basic-gray-neutral-white);
-}
-
-.appointment-item input:hover,
-.appointment-item textarea:hover {
-  border: 2px solid var(--basic-gray-neutral-light);
-}
-
-.appointment-item input:focus,
-.appointment-item textarea:focus {
-  border: 2px solid var(--basic-black);
-}
-
-.appointment-item input:invalid,
-.appointment-item textarea:invalid {
-  color: var(--special-green-neutral);
-  border: 2px solid var(--special-red-neutral);
+.appointment .button:focus {
+  background-color: var(--special-red-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 /* Page-body */
