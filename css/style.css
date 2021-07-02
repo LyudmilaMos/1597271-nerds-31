@@ -574,6 +574,11 @@ img {
   margin-top: 55px;
 }
 
+.modal-map {
+  display: none;
+}
+
+
 .contacts-address {
   width: 219px;
   color: var(--basic-gray-dim);
@@ -816,13 +821,18 @@ img {
   line-height: 18px;
 }
 
-.page-catalog-container {
-  width: 1160px;
-  display: grid;
+.page-catalog {
+  /*display: grid;
   grid-template-columns: 260px 1fr;
-  margin: 0 auto;
+  margin: 0 auto;*/
+
 }
 
+.page-catalog-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1160px;
+}
 
 .page-title {
   background-color: var(--basic-gray-white);
@@ -831,14 +841,18 @@ img {
   font-size: 55px;
   line-height: 55px;
   text-align: center;
-  padding-top: 65px;
-  padding-bottom: 67px;
-}
-
-.inner-page .page-title {
+  padding-top: 30px;
+  padding-bottom: 55px;
   grid-column: 1 / -1;
   margin: 0 auto;
 }
+
+
+/*
+.inner-page .page-title {
+  grid-column: 1 / -1;
+  margin: 0 auto;
+}*/
 
 .site-navigation-decor::after {
   content: "";
@@ -956,6 +970,15 @@ img {
 .filter-option {
   margin-bottom: 19px;
   padding-left: 45px;
+  color: var(--basic-gray-dark);
+  opacity: 0.4;
+}
+
+.filter-option:hover {
+  opacity: 1;
+}
+.filter-option:disabled {
+  opacity: 0.1;
 }
 
 .filter-option label {
@@ -1100,6 +1123,7 @@ img {
   font-weight: normal;
   text-decoration: none;
   opacity: 0.3;
+  margin-left: 30px;
 }
 
 .sorting-list a:hover,
@@ -1160,6 +1184,10 @@ img {
   margin-left: 160px;
 }
 
+.catalog-card-list {
+  margin-left: 40px;
+}
+
 .catalog-card-title {
   font-size: 18px;
   line-height: 30px;
@@ -1173,6 +1201,18 @@ img {
   width: 358px;
   height: 578px;
   margin: 0;
+}
+
+.catalog-card-decor{
+  opacity: 0.12;
+}
+
+.catalog-card-decor:hover {
+  opacity: 1;
+}
+
+.catalog-card:hover {
+  filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
 }
 
 .catalog-card-price {
